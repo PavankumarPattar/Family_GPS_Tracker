@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/defaultimg"
+        app:civ_border_color="#ff000000"
+        app:civ_border_width="2dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="openGallery"/>
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter your name"
+        android:inputType="textEmailAddress"
+        android:padding="17dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/button_shape"
+        android:onClick="generateCode"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/editTextPass"-->
+<!--        android:layout_marginTop="66dp"-->
+<!--        android:text="This is how you&apos;ll appear on your map"-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_centerHorizontal="true"/>-->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginTop="11dp"
+        android:onClick="openGallery"
+        android:text="Add photo"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

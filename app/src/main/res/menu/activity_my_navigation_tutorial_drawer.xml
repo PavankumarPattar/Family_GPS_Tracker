@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/joinCircle"
+            android:icon="@drawable/ic_baseline_recent_joinc_24"
+            android:title="Join a Circle"/>
+
+        <item android:id="@+id/myCircle"
+            android:icon="@drawable/ic_baseline_supervised_mycircle_24"
+            android:title="My Circle"/>
+
+        <item android:id="@+id/joinedCircle"
+            android:icon="@drawable/ic_baseline_family_joined_24"
+            android:title="Joined Circles"/>
+
+        <item android:id="@+id/alertCenter"
+            android:icon="@drawable/ic_baseline_add_alert_24"
+            android:title="Alerts Center"/>
+
+        <item android:id="@+id/inviteFriends"
+            android:icon="@drawable/ic_baseline_group_invite_24"
+            android:title="Invite Friends"/>
+
+        <item android:id="@+id/sendHelpAlert"
+            android:icon="@drawable/ic_baseline_emoji_help_24"
+            android:title="Send Help Alert"/>
+
+        <item android:id="@+id/sharelocation"
+            android:icon="@drawable/ic_baseline_location_on_24"
+            android:title="Share Location"/>
+
+        <item android:id="@+id/howtouse"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="How to use"/>
+
+        <item android:id="@+id/signout"
+            android:icon="@drawable/ic_baseline_keyboard_out_24"
+            android:title="Signout"/>
+
+    </group>
+</menu>

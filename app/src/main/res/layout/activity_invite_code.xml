@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:gravity="center_horizontal"
+        android:text="Share this invite code with the people you want in your circle"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_gravity="center"
+        android:layout_marginTop="58dp"
+        android:fontFamily="monospace"
+        android:text="XXXXXX"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="34sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_below="@id/textView4"
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Share your code out loud or send it in a message"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="111dp"
+        android:background="@drawable/button_shape"
+        android:onClick="Register"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        android:textSize="16sp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView6"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/button3"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="46dp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:onClick="Register"-->
+<!--        android:text="Done"-->
+<!--        android:textSize="20sp" />-->
+</RelativeLayout>

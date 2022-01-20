@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="361dp"
+        android:layout_height="68dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter your email address"
+        android:inputType="textEmailAddress"
+        android:padding="17dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/button_shape"
+        android:onClick="checkIfEmailPresent"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="395dp"
+        android:layout_height="37dp"
+        android:layout_above="@+id/button"
+        android:layout_marginBottom="16dp"
+        android:text="By signing up you accept our Terms of Service and Privacy Policy."
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+</RelativeLayout>
